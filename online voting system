@@ -1,0 +1,43 @@
+votes={
+    "condidate a": 0,
+    "condidate b": 0,
+    "condidate c": 0
+}
+while True:
+    print("____online voting system____")
+    print("1.vote")
+    print("2.view votes")
+    print("3.exit")
+    choice=int(input("enter your choice: "))
+    if choice==1:
+        print("\n condidates:")
+        print("1.condidate a")
+        print("2.condidate b")
+        print("3.condidate c")
+        vote=input("enter your vote to win the person: ")
+        if vote==1:
+            votes[
+    "condidate a"
+]+=1
+            print("condidate vote is sussuccfully sumbitted")
+        elif vote==2:
+            votes[
+    "condidates b"
+]+=2
+            print("condidate vote is sussuccfully sumbitted")
+        elif vote==3:
+            votes[
+    "condidates c"
+]+=3
+            print("condidate vote is sussuccfully sumbitted")
+        else:
+            print("invalid input,,please enter correct input to vote")
+    elif choice==2:
+        print("\nvoting result")
+        for condidate,total_votes in votes.items():
+                print(condidate,
+":",total_votes)
+    elif choice==3:
+        print("voting system closed")
+    else:
+        print("invalid input")
